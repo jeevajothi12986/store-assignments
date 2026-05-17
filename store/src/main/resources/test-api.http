@@ -1,0 +1,35 @@
+### Add Product 1
+POST http://localhost:8080/product/add
+Content-Type: application/json
+
+{
+  "name": "Pen",
+  "price": 10.0,
+  "qty": 100
+}
+
+### Add Product 2
+POST http://localhost:8080/product/add
+Content-Type: application/json
+
+{
+  "name": "Notebook",
+  "price": 50.0,
+  "qty": 50
+}
+
+### List All Products
+GET http://localhost:8080/product/list
+
+### Update Product 1
+PUT http://localhost:8080/product/update/1
+Content-Type: application/json
+
+{
+  "name": "Blue Pen",
+  "price": 12.0,
+  "qty": 80
+}
+
+### Delete Product 2
+DELETE http://localhost:8080/product/delete/2
