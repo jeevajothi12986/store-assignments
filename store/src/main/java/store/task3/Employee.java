@@ -14,7 +14,7 @@ public class Employee {
         this.department = department;
     }
 
-    // This helps print employee details cleanly
+    // This helps to print employee details cleanly
     @Override
     public String toString() {
         return "ID: " + id +

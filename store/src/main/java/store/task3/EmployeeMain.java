@@ -3,7 +3,7 @@ import java.util.*;
 public class EmployeeMain {
     public static void main(String[] args) {
 
-        // ── Step 1: Create list of 10 employees ──────────────
+        //Create the list of 10 employees
         List<Employee> employees = new ArrayList<>();
 
         employees.add(new Employee(1,  "Ravi",    45000, "IT"));
@@ -17,7 +17,7 @@ public class EmployeeMain {
         employees.add(new Employee(9,  "Suresh",  41000, "Finance"));
         employees.add(new Employee(10, "Lakshmi", 38000, "IT"));
 
-        // ── Task A: Salary > 30000 ────────────────────────────
+        //First : Salary > 30000
         System.out.println("===== Employees with Salary > 30000 =====");
         for (Employee e : employees) {
             if (e.salary > 30000) {
@@ -25,7 +25,7 @@ public class EmployeeMain {
             }
         }
 
-        // ── Task B: Group by Department ───────────────────────
+        // Second : Group by Department
         System.out.println("\n===== Employees Grouped by Department =====");
 
         // Get unique department names first
@@ -44,7 +44,7 @@ public class EmployeeMain {
             }
         }
 
-        // ── Task C: Sort by Name ──────────────────────────────
+        // Third : Sort by name
         System.out.println("\n===== Employees Sorted by Name =====");
 
         // Sort the list alphabetically by name
